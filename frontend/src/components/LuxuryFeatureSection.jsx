@@ -241,7 +241,7 @@ export default function LuxuryFeatureSection() {
           <div className="flex flex-col items-center gap-2">
             <GlassTile icon={Wallet} label="مالية" color={colors.blue} size="md" />
             <GlassTile icon={Gamepad2} label="ألعاب" color={colors.purple} size="md" />
-            <GlassTile icon={ShoppingBag} label="تسوّق" color={colors.green} />
+            <GlassTile icon={ShoppingBag} label="تسوّق" color={colors.green} size="md" />
           </div>
 
           {/* Middle column below "توافق عالمي" - gifts and discounts aligned with Shopping */}

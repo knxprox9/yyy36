@@ -137,16 +137,20 @@ const Node = ({ icon: Icon, label, desc, color, backContent, size = "md" }) => {
   );
 };
 
-const GlassTile = ({ icon: Icon, label, color }) => (
-  <div className="glass-tile-clean group relative w-full px-1 py-1 text-center bg-transparent">
-    <div className="mx-auto mb-1 flex h-[18px] w-[18px] items-center justify-center">
-      <Icon className={cn("h-3 w-3", color.icon)} />
+const GlassTile = ({ icon: Icon, label, color, size = "sm" }) => {
+  const sizeMap = { sm: "h-3 w-3", md: "h-4 w-4", lg: "h-5 w-5" };
+  const iconSize = sizeMap[size] || sizeMap.sm;
+  return (
+    <div className="glass-tile-clean group relative w-full px-1 py-1 text-center bg-transparent">
+      <div className="mx-auto mb-1 flex h-[18px] w-[18px] items-center justify-center">
+        <Icon className={cn(iconSize, color.icon)} />
+      </div>
+      <div className="text-[10px] font-semibold text-slate-700 truncate" dir="rtl">
+        {label}
+      </div>
     </div>
-    <div className="text-[10px] font-semibold text-slate-700 truncate" dir="rtl">
-      {label}
-    </div>
-  </div>
-);
+  );
+};
 
 const colors = {
   blue: { border: "border-sky-500/50", icon: "text-sky-600", glow: "0 0 0 2px rgba(14,165,233,0.25) inset" },

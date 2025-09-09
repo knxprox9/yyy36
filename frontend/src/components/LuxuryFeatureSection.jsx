@@ -242,13 +242,17 @@ export default function LuxuryFeatureSection() {
 
           {/* Middle column below "توافق عالمي" - gifts and discounts aligned with Shopping */}
           <div className="flex flex-col items-center gap-2">
-            <div className="mt-[100px] flex items-center gap-2">
-              <div className="w-[72px]">
-                <GlassTile icon={Gift} label="هدايا" color={colors.orange} />
-              </div>
-              <div className="w-[72px]">
-                <GlassTile icon={Percent} label="خصومات" color={colors.green} />
-              </div>
+            {/* Reserve vertical space equal to first two tiles for perfect row alignment */}
+            <div className="invisible">
+              <GlassTile icon={Wallet} label="مالية" color={colors.blue} />
+            </div>
+            <div className="invisible">
+              <GlassTile icon={Gamepad2} label="ألعاب" color={colors.purple} />
+            </div>
+            {/* Now place the two new icons on the same horizontal line as "تسوّق" */}
+            <div className="flex items-center gap-2">
+              <GlassTile icon={Gift} label="هدايا" color={colors.orange} />
+              <GlassTile icon={Percent} label="خصومات" color={colors.green} />
             </div>
           </div>
 

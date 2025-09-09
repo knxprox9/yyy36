@@ -212,7 +212,11 @@ export default function LuxuryFeatureSection() {
                 {/* دائرة باقات أسفل دائرة التوافق، بدون تحريك أي عنصر آخر */}
                 <div className="pointer-events-auto absolute left-1/2 -translate-x-1/2 top-[calc(100%+10px)]">
                   <div className="flex flex-col items-center">
-                    <Node icon={Sparkles} label="باقات" desc="حزم مرنة" color={colors.orange} size="mdp" />
+                    <div className="relative inline-block w-[60px] h-[60px]">
+                      <Node icon={Sparkles} label="باقات" desc="حزم مرنة" color={colors.orange} size="mdp" />
+                      <span aria-hidden className="pointer-events-none absolute -top-1 -right-1 text-orange-600 text-[10px] font-extrabold leading-none select-none">+</span>
+                      <span aria-hidden className="pointer-events-none absolute -bottom-1 -left-1 w-[7px] h-[7px] rounded-full border-[1.6px] border-orange-600" />
+                    </div>
                     <div className="text-[10px] font-semibold text-slate-800 text-center leading-tight mt-[4px]">
                       <span className="block">باقات متنوعة ومناسبة</span>
                       <span className="block">تبداء من 5$...</span>

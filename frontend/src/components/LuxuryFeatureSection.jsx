@@ -200,13 +200,21 @@ export default function LuxuryFeatureSection() {
                 <Node icon={Layers} label="فئات متعددة" desc="خيارات واسعة" color={colors.purple} backContent={[Wallet, ShoppingBag, Gamepad2]} size="xl" />
                 <div className="text-[10px] font-semibold text-slate-800 truncate">فئات متعددة</div>
               </div>
-              <div className="flex flex-col items-center gap-1">
+              <div className="relative flex flex-col items-center gap-1">
                 <div className="relative top-[4px]">
                   <Node icon={Globe2} label="متوافقة عالميا مع أشهر المنصات والمواقع" desc="استخدام عالمي" color={colors.green} size="mdp" />
                 </div>
                 <div className="text-[10px] font-semibold text-slate-800 text-center leading-tight mt-[6px]">
                   <span className="block">متوافقة عالميا</span>
                   <span className="block">مع أشهر المنصات والمواقع</span>
+                </div>
+
+                {/* دائرة باقات أسفل دائرة التوافق، بدون تحريك أي عنصر آخر */}
+                <div className="pointer-events-auto absolute left-1/2 -translate-x-1/2 top-[calc(100%+6px)]">
+                  <div className="flex flex-col items-center">
+                    <Node icon={Gift} label="باقات" desc="حزم مرنة" color={colors.orange} size="mdp" />
+                    <div className="text-[10px] font-semibold text-slate-800 text-center leading-tight mt-[4px]">باقات</div>
+                  </div>
                 </div>
               </div>
 

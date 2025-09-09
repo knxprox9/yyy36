@@ -210,7 +210,7 @@ export default function LuxuryFeatureSection() {
                 </div>
 
                 {/* دائرة باقات أسفل دائرة التوافق، بدون تحريك أي عنصر آخر */}
-                <div className="pointer-events-auto absolute left-1/2 -translate-x-1/2 top-[calc(100%+6px)]">
+                <div className="pointer-events-auto absolute left-1/2 -translate-x-1/2 top-[calc(100%+10px)]">
                   <div className="flex flex-col items-center">
                     <Node icon={Gift} label="باقات" desc="حزم مرنة" color={colors.orange} size="mdp" />
                     <div className="text-[10px] font-semibold text-slate-800 text-center leading-tight mt-[4px]">باقات</div>

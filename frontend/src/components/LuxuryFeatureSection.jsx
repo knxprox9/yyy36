@@ -239,7 +239,7 @@ export default function LuxuryFeatureSection() {
         <div className="px-3 grid grid-cols-2 gap-4 items-start">
           {/* Column under "فئات متعددة" */}
           <div className="flex flex-col items-center gap-2">
-            <GlassTile icon={Wallet} label="مالية" color={colors.blue} />
+            <GlassTile icon={Wallet} label="مالية" color={colors.blue} size="md" />
             <GlassTile icon={Gamepad2} label="ألعاب" color={colors.purple} />
             <GlassTile icon={ShoppingBag} label="تسوّق" color={colors.green} />
           </div>

@@ -213,7 +213,10 @@ export default function LuxuryFeatureSection() {
                 <div className="pointer-events-auto absolute left-1/2 -translate-x-1/2 top-[calc(100%+10px)]">
                   <div className="flex flex-col items-center">
                     <Node icon={Gift} label="باقات" desc="حزم مرنة" color={colors.orange} size="mdp" />
-                    <div className="text-[10px] font-semibold text-slate-800 text-center leading-tight mt-[4px]">باقات</div>
+                    <div className="text-[10px] font-semibold text-slate-800 text-center leading-tight mt-[4px]">
+                      <span className="block">باقات متنوعة ومناسبة</span>
+                      <span className="block">تبداء من 5$...</span>
+                    </div>
                   </div>
                 </div>
               </div>

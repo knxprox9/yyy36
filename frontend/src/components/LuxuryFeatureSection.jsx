@@ -240,8 +240,17 @@ export default function LuxuryFeatureSection() {
             <GlassTile icon={ShoppingBag} label="تسوّق" color={colors.green} />
           </div>
 
-          {/* Middle column below "توافق عالمي" left intentionally empty for alignment */}
-          <div className="flex flex-col items-center gap-2"></div>
+          {/* Middle column below "توافق عالمي" - gifts and discounts aligned with Shopping */}
+          <div className="flex flex-col items-center gap-2">
+            <div className="mt-[100px] flex items-center gap-2">
+              <div className="w-[72px]">
+                <GlassTile icon={Gift} label="هدايا" color={colors.orange} />
+              </div>
+              <div className="w-[72px]">
+                <GlassTile icon={Percent} label="خصومات" color={colors.green} />
+              </div>
+            </div>
+          </div>
 
           {/* Column previously under "باقات" removed as requested */}
         </div>

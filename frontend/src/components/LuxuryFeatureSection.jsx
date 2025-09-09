@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 /* Enhanced luxury feature rail + tiles with shimmer, flip, pulse, and responsive layout */
 
 import { motion } from "framer-motion";
-import { Sparkles, Globe2, Layers, Wallet, Gamepad2, ShoppingBag, Percent, Gift } from "lucide-react";
+import { Sparkles, Globe2, Layers, Wallet, Gamepad2, ShoppingBag, Percent, Package } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { cn } from "../lib/utils";
 
